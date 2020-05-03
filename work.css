@@ -1,0 +1,276 @@
+body{
+	background: white;
+	width: 100%;
+	margin: 0 auto;
+
+}
+
+header{
+	background: #524f49;
+	display: flex;
+	font-size: 1rem;
+	font-family: "Agency FB", "Times New Roman", sans-serif;
+	padding-left: 2%;
+	height: 180px;
+}
+header img{
+	width: 10%;
+}
+span{
+	color: red;
+}
+
+nav ul{
+	display: flex;
+    list-style-type: none;
+    margin-left: 30%;
+    margin-top: -100px;
+	
+}
+
+nav li{
+	
+	font-family: "Agency FB","Baskerville Old Face", "Times New Roman", Arial, sans-serif;
+	font-size: 140%;
+	background:  #0ed814;
+	border-right: 3px solid black;
+	padding: 2%  5%; 
+}
+
+nav a{
+	text-decoration: none;
+	color: white;
+}
+nav li:hover{
+	background: grey;
+}
+nav li li{
+	display: none;
+}
+/*nav li ul {
+    display: none;
+    margin-left: 5%;
+    margin-top: -5px;
+    line-height: 100px;
+    padding: 2%  5%;
+    width: inherit;
+
+}
+
+nav li:hover ul{
+	display: flex;
+	flex-direction: column;
+	
+}
+
+nav li li{
+	border-right: none;
+	font-size: 140%;
+
+
+}*/
+
+.active{
+	background: grey;
+
+}
+
+#section1{
+	width: 20%;
+	display: inline-block;
+	float: left;
+	margin-top: 40px;
+	background: lightblue;
+	
+}
+
+#section1 img{
+	width: 75%;
+	border: 3px solid #00BCD4;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+}
+#section1 h2{
+	color: blue;
+    font-family: "Agency FB","Comic Sans MS","Times New Roman",sans-serif;
+	font-size: 110%; 
+	padding-left: 40%;
+	padding-top: 2%; 
+
+}
+
+
+
+#section a{
+
+	color: #ff9800;
+
+}
+
+#section2{
+	display: inline-block;
+	float: right;
+	background: lightgreen;
+	width: 75%;
+	margin-top: 30px;
+	font-family: "Agency FB","Comic Sans MS","Times New Roman",sans-serif;
+	font-size: 110%;
+	padding-top: 50px;
+}
+
+#section2 p{
+	
+      font-family: "Comic Sans MS", "Times New Roman", sans-serif;
+      font-size: 90%;
+      color: black;
+      padding: 0% 4%;
+      text-align: justify-all;
+      line-height: 30px;
+}
+
+#section2 h2{
+    font-size: 130%;
+	color: blue;
+	font-family: "Agency FB","Comic Sans MS","Times New Roman", sans-serif;
+    padding-left: 5%;
+	
+}
+
+#section2 h2:nth-of-type(1){
+    font-size: 142%;
+    font-weight: bold;
+}
+
+
+#section2 img{
+	padding-left: 5%;
+}
+
+#section2 a{
+	padding-left: 4%;
+}
+
+#section3{
+
+	clear: both;
+}
+
+#icone{
+	margin-left: 60%;
+}
+
+
+@media screen and (max-width:1024px)
+{
+	  
+    header img{
+      width: 10%;
+      height: 100px;
+    }
+  
+  
+    #section1{
+		background: lightblue;
+		border: 1px 0px solid green;
+		width: 100%;
+		height: 300px;
+		margin-top: 20px;
+    }
+
+    #section1 img{
+	 display: none;
+    }
+
+    #section1 h2{
+    	visibility: hidden;
+    }
+
+    #section1 h2:after{
+    	content: "Disciplines";
+    	font-family: "Agency FB","Comic Sans MS","Times New Roman",sans-serif;
+    	font-size: 250%;
+    	color: #0ed814;
+    	visibility: visible;
+
+
+    }
+	
+
+	#section1{
+
+		background: url('inline-4039073_1920.jpg');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-bottom: 10px;
+
+	}
+
+	h3{
+		background: none;
+	}
+
+	#section2{
+
+		background: none;
+		width: 100%;
+		display: inline;
+		margin-top: 10px;
+	}
+
+	#section2 h2{
+	   font-size: 130%;
+	   color: blue;
+	   font-family: "Agency FB","Comic Sans MS","Times New Roman", sans-serif;
+       padding-left: 4%;
+    }
+
+    #section2 h2:nth-of-type(1){
+    font-size: 130%;
+    font-weight: bold;
+    padding-left: 4%;
+    text-transform: uppercase;
+    }
+
+	#section2 p{
+	  font-family: "Comic Sans MS", "Times New Roman", sans-serif;
+      font-size: 100%;
+      color: black;
+      padding: 0% 4%;
+      text-align: justify-all;
+      line-height: 30px;
+     
+	}
+
+	nav ul{
+		display: flex;
+		flex-direction: column;
+		border: none;
+		margin-top: -160px;
+    margin-left: 45%;
+		
+	}
+	nav li{
+	
+	font-family: "Agency FB","Baskerville Old Face", "Times New Roman", Arial, sans-serif;
+	font-size: 145%;
+	border-right: none;
+	padding: 1% 2%;
+    }
+	
+	header{
+	width: 96%;
+	background: #524f49;
+	display: flex;
+	font-size: 70%;
+	font-family: "Agency FB", "Times New Roman", sans-serif;
+	padding-left: 4%;
+	height: 160px;
+	}
+
+	#section2 a{
+		padding-left: 4%;
+	}
+	
+
+}
