@@ -2,85 +2,85 @@ body{
 	background: white;
 	width: 100%;
 	margin: 0 auto;
+	padding: 0 auto;
 
 }
 
 header{
 	background: #524f49;
 	display: flex;
-	font-size: 1rem;
-	font-family: "Agency FB", "Times New Roman", sans-serif;
 	padding-left: 2%;
 	height: 180px;
+
 }
+
+h1{
+   	font-size: 2rem;
+	font-family: "Agency FB", "Times New Roman", sans-serif;
+	color: black;
+	margin-top: 20px;
+
+}
+
 header img{
 	width: 10%;
+	height: 150px;
 }
 span{
 	color: red;
 }
 
-nav ul{
-	display: flex;
-    list-style-type: none;
-    margin-left: 30%;
-    margin-top: -100px;
-	
+.navbar{
+	background: none;
+	margin-left: 30%;
+
 }
 
-nav li{
-	
-	font-family: "Agency FB","Baskerville Old Face", "Times New Roman", Arial, sans-serif;
-	font-size: 140%;
-	background:  #0ed814;
-	border-right: 3px solid black;
-	padding: 2%  5%; 
+.navbar-toggler{
+
+	margin-top: -180px;
+} 
+
+
+  
+.navbar-nav{
+    
+    margin-top: -180px;
 }
 
-nav a{
-	text-decoration: none;
-	color: white;
+
+
+li{
+
+	font-family: "Agency FB";
+	font-size: 1.5em;
+	background: #ae2522;
+	width: 40%;
+	padding-left: 6%;
+	padding-right: 8%;
+	margin-right: 10px;
+	border: 1px solid #ae2522;
+	border-radius: 5px;
+
 }
-nav li:hover{
+
+li:hover{
 	background: grey;
+	border: 1px solid grey;
 }
-nav li li{
-	display: none;
-}
-/*nav li ul {
-    display: none;
-    margin-left: 5%;
-    margin-top: -5px;
-    line-height: 100px;
-    padding: 2%  5%;
-    width: inherit;
-
-}
-
-nav li:hover ul{
-	display: flex;
-	flex-direction: column;
-	
-}
-
-nav li li{
-	border-right: none;
-	font-size: 140%;
-
-
-}*/
 
 .active{
 	background: grey;
-
+	border: 1px solid grey;
 }
+
 
 #section1{
 	width: 20%;
 	display: inline-block;
 	float: left;
 	margin-top: 40px;
-	background: lightblue;
+	background: #d3f0f9;
 	
 }
 
@@ -89,14 +89,15 @@ nav li li{
 	border: 3px solid #00BCD4;
 	border-radius: 10px;
 	margin-bottom: 10px;
-	margin-left: 20px;
+	margin-left: 35px;
 }
+
 #section1 h2{
 	color: blue;
     font-family: "Agency FB","Comic Sans MS","Times New Roman",sans-serif;
-	font-size: 110%; 
-	padding-left: 40%;
-	padding-top: 2%; 
+	font-size: 1.5rem; 
+	padding-left: 35%;
+	padding-top: 3%; 
 
 }
 
@@ -111,9 +112,9 @@ nav li li{
 #section2{
 	display: inline-block;
 	float: right;
-	background: lightgreen;
+	background: #fbecd3c7;
 	width: 75%;
-	margin-top: 30px;
+	margin-top: 15px;
 	font-family: "Agency FB","Comic Sans MS","Times New Roman",sans-serif;
 	font-size: 110%;
 	padding-top: 50px;
@@ -160,17 +161,59 @@ nav li li{
 	margin-left: 60%;
 }
 
+video{
+	width: 30%;
+	margin-left: 25%;
+}
 
-@media screen and (max-width:1024px)
+@media screen and (max-width:994px)
 {
-	  
-    header img{
-      width: 10%;
-      height: 100px;
+    
+    header{
+	
+	height: 140px;
+	
+	}
+
+    li{
+    	width: 100%;
+    	border-radius: unset;
+    	padding-left: 1%;
+    	background: #ae2522;
+    	border-bottom: 1px solid white;
+    	font-size: 1.1rem;
+
     }
-  
-  
-    #section1{
+
+    li:nth-of-type(4){
+    	border-bottom: none;
+    }
+ 
+    header img{
+      width: 20%;
+      height: 120px;
+    }
+
+    h1{
+    	font-size: 1.2rem;
+	   font-family: "Agency FB", "Times New Roman", sans-serif;
+	   margin-top: 40px;
+	   font-weight: bold;
+
+
+    }
+   
+    .navbar-nav{
+    	margin-top: -70px;
+    	padding-left: 1px;
+    }
+
+   .navbar{
+   	  	margin-left: 0%;
+   	  	padding-left: 0px;
+   }
+   
+   #section1{
 		background: lightblue;
 		border: 1px 0px solid green;
 		width: 100%;
@@ -189,9 +232,14 @@ nav li li{
     #section1 h2:after{
     	content: "Disciplines";
     	font-family: "Agency FB","Comic Sans MS","Times New Roman",sans-serif;
-    	font-size: 250%;
-    	color: #0ed814;
+    	font-size: 2.1rem;
+    	color: white;
     	visibility: visible;
+    	display: block;
+    	float: left;
+        padding-left: 1%;
+	    padding-top: 40%;
+	    text-decoration: underline;
 
 
     }
@@ -202,7 +250,7 @@ nav li li{
 		background: url('inline-4039073_1920.jpg');
 		background-size: 100%;
 		background-repeat: no-repeat;
-		margin-bottom: 10px;
+		display: block;
 
 	}
 
@@ -214,8 +262,10 @@ nav li li{
 
 		background: none;
 		width: 100%;
-		display: inline;
 		margin-top: 10px;
+		display: block;
+		padding-top: 1px;
+
 	}
 
 	#section2 h2{
@@ -242,35 +292,9 @@ nav li li{
      
 	}
 
-	nav ul{
-		display: flex;
-		flex-direction: column;
-		border: none;
-		margin-top: -160px;
-    margin-left: 45%;
-		
-	}
-	nav li{
-	
-	font-family: "Agency FB","Baskerville Old Face", "Times New Roman", Arial, sans-serif;
-	font-size: 145%;
-	border-right: none;
-	padding: 1% 2%;
-    }
-	
-	header{
-	width: 96%;
-	background: #524f49;
-	display: flex;
-	font-size: 70%;
-	font-family: "Agency FB", "Times New Roman", sans-serif;
-	padding-left: 4%;
-	height: 160px;
-	}
-
 	#section2 a{
 		padding-left: 4%;
 	}
-	
 
 }
+  
